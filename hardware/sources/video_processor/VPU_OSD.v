@@ -1,7 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
 // Module Name: VPU_OSD
 // Description: 在有效画面上叠 128x128 安路 logo 和一行字幕。
 //              logo 用 rom_anlogic_logo_128x128，ERAM32K，4096x8。
