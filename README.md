@@ -1,0 +1,38 @@
+# FPGA Contest Project
+
+基于 **EG4S20** 的 TF 卡 HDMI 多媒体展示系统。仓库包含 FPGA 源码、Tang Dynasty 工程、IP 配置、引脚与时序约束及 Windows 上位机程序。
+
+## 项目组成
+
+源码包含 SD 卡控制、BMP/音频读取、SDRAM 控制、HDMI 输出、视频处理、OSD 菜单、按键与 UART 通信等模块。
+
+| 路径 | 内容 |
+| --- | --- |
+| `hardware/sources/` | Verilog 源码、仿真文件、初始化数据及资源生成脚本 |
+| `hardware/TD_PRJ/EG4_SD_HDMI.al` | Tang Dynasty 工程入口 |
+| `hardware/TD_PRJ/al_ip/` | PLL、FIFO、存储器、DSP 等 IP 文件 |
+| `hardware/TD_PRJ/constraint/` | 引脚约束与时序约束 |
+| `tools/windows/` | 串口上位机与 SD 卡布局工具 |
+
+## 打开 FPGA 工程
+
+1. 克隆仓库或下载并解压 ZIP，保留目录结构。
+2. 使用 Tang Dynasty 打开 `hardware/TD_PRJ/EG4_SD_HDMI.al`。原工程记录的工具版本为 **6.2.190657**，目标器件为 **EG4S20BG256**，顶层模块为 `EG4_SD_HDMI_SUBSYSTOP`。
+3. 按实际开发板检查引脚约束。原工程的综合和布局布线配置使用 `constraint_CARD1`，同时保留另一套 `constraint_1`。
+4. 根据需要重新生成 IP、综合、布局布线和生成下载文件。
+
+本次整理仅检查了工程中显式引用的文件是否存在，尚未在本机完成综合、仿真或开发板验证。
+
+## Windows 上位机
+
+- `tools/windows/串口上位机.exe`：串口画面参数控制；原使用说明标注波特率 **256000，8N1**。
+- `tools/windows/SD卡布局.exe`：BMP / WAV 扇区规划、媒体转换及 SD 卡写入。
+- 运行环境：64 位 Windows 10 / 11。两款工具均为打包后的独立 EXE，首次启动解压可能稍慢。
+
+SD 卡写入会修改所选存储设备，请核对盘符。收到的资料包未包含两款上位机的 Python 源码，目前提供的是打包后的 EXE。
+
+## 资料整理说明
+
+本仓库根据“赛题1资料打包”整理。保留当前源码、工程、IP、约束、初始化资源和两款上位机程序；不包含报告、PDF、模板及额外说明附件。排除了压缩包中的旧 `.git` 历史、综合及布局布线输出、运行日志、调试会话和 Python 缓存。工程根目录的原机器绝对路径改为 `.`，其他源文件保持原内容。
+
+源码中包含加密 IP 文件，保留其原有声明。本次整理没有新增开源许可证；各文件及第三方 IP 的使用权限以原作者或供应商的许可为准。

@@ -1,0 +1,18 @@
+EF2 : 0 : G : En :  :  : 
+EF3 : 0 : G : En :  :  : 
+EF4 : 0 : G : En :  :  : 
+EG4 : 1 : G : En :  :  : 
+SF1 : 0 : G : En :  :  : 
+SF2 : 0 : G : En :  :  : 
+Input_Width_A : 9 : U : En :  : 2 : 64
+Input_Width_B : 10 : U : En :  : 2 : 64
+Output_Width : 19 : G : En :  :  : 
+Signed : 0 : U : En :  :  : 
+Unsigned : 1 : U : En :  :  : 
+Async : 0 : U : En :  :  : 
+Sync : 1 : U : En :  :  : 
+USE_INPUTREGA : 0 : U : En :  :  : 
+USE_INPUTREGB : 0 : U : En :  :  : 
+USE_OUTPUTREG : 0 : U : En :  :  : 
+INPUTFORMAT : UNSIGNED : G : En :  :  : 
+SRMODE : SYNC : G : En :  :  : 

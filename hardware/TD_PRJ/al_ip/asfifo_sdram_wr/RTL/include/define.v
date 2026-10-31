@@ -1,0 +1,2 @@
+`define ASYNC_CLK_asfifo_sdram_wr
+`define RST_PIN_asfifo_sdram_wr

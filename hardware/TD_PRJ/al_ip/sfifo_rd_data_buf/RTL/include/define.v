@@ -1,0 +1,1 @@
+`define RST_PIN_sfifo_rd_data_buf

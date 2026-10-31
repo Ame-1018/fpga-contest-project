@@ -1,0 +1,8 @@
+* text=auto
+*.exe binary
+*.pdf binary
+*.docx binary
+*.png binary
+*.bmp binary
+*.bin binary
+*.mem -text

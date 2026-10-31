@@ -1,0 +1,24 @@
+# FPGA tool output
+/docs/
+/tools/windows/*.md
+**/EG4_SD_HDMI_Runs/
+**/log/
+**/chip_debugger/
+**/.recent_user_depot.ini
+*.log
+*.logw
+
+# Python and editor caches
+__pycache__/
+*.py[cod]
+.venv/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:anlogic="http" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+    <ipxact:vendor>anlogic.com</ipxact:vendor>
+    <ipxact:library>customized</ipxact:library>
+    <ipxact:name>design_mul_scale_su</ipxact:name>
+    <ipxact:version>2.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>DSP_mul_scale_su_Inst</ipxact:instanceName>
+            <ipxact:componentRef vendor="anlogic.com" library="ip" name="DSPF4F6D0P0" version="2.0"/>
+            <ipxact:configurableElementValues>
+                <ipxact:configurableElementValue referenceId="EF2">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="EF3">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="EF4">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="EG4">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="SF1">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="SF2">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Input_Width_A">9</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Input_Width_B">8</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Output_Width">17</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Signed">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Unsigned">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Async">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Sync">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="USE_INPUTREGA">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="USE_INPUTREGB">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="USE_OUTPUTREG">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="INPUTFORMAT">&quot;SIGNED&quot;</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="SRMODE">&quot;SYNC&quot;</ipxact:configurableElementValue>
+            </ipxact:configurableElementValues>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>CLK</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DSP_mul_scale_su_Inst" portRef="CLK"/>
+                <ipxact:externalPortReference portRef="CLK"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>A</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DSP_mul_scale_su_Inst" portRef="A"/>
+                <ipxact:externalPortReference portRef="A"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>B</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DSP_mul_scale_su_Inst" portRef="B"/>
+                <ipxact:externalPortReference portRef="B"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>P</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DSP_mul_scale_su_Inst" portRef="P"/>
+                <ipxact:externalPortReference portRef="P"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+    <ipxact:vendorExtensions>
+        <anlogic:device>EG4S20BG256</anlogic:device>
+        <anlogic:displayname>DSP</anlogic:displayname>
+        <anlogic:ipGenVersion value="189136 2026/01/26">1.0</anlogic:ipGenVersion>
+    </ipxact:vendorExtensions>
+</ipxact:design>

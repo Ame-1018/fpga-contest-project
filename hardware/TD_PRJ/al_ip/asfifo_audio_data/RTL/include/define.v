@@ -1,0 +1,2 @@
+`define ASYNC_CLK_asfifo_audio_data
+`define RST_PIN_asfifo_audio_data

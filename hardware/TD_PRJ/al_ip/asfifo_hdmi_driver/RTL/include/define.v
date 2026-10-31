@@ -1,0 +1,2 @@
+`define ASYNC_CLK_asfifo_hdmi_driver
+`define RST_PIN_asfifo_hdmi_driver
